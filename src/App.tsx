@@ -18,7 +18,7 @@ export const App: React.FC = () => {
     fetchFn()
       .then(setGoods)
       .catch(err => {
-        const message = err instanceof Error ? err.message : String(error);
+        const message = err instanceof Error ? err.message : String(err);
 
         setError(message);
       })
